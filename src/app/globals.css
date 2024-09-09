@@ -63,7 +63,7 @@
 
 
 .sky{
-  background-image: url(../Components/Image/skybg.jpg);
+  background-image: url(../Components/Image/bg1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,6 +190,13 @@
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
   }
+}
+
+.loginBg{
+        background-image: url(../components/Image/vetor.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 

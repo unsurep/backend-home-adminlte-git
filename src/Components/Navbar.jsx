@@ -3,10 +3,11 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import logo from '../Components/Image/logo.webp'
+import logo from '../components/Image/logo.webp'
 import { IoMenu } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
+import { RxDividerVertical } from "react-icons/rx";
 
 
 
@@ -86,14 +87,18 @@ const Navbar=()=>{
 
                     <li onClick={toggleIcon} className='text-2xl cursor-pointer text-white'><FaUser /> </li>
 
-                    {showIcon===true && (<ul className='absolute bounce-in-top top-24 right-[23rem] text-white px-8 pt-2 pb-12 flex flex-col gap-3 rounded-[12px] font-semibold  '>
+                    {showIcon===true && (<ul className='absolute bounce-in-top top-24 right-[23rem] bg-gradient-to-r from-sky-800 to-gray-900 text-white px-8 py-3  flex  gap-3 rounded-[12px] shadow-lg shadow-red-800 font-semibold  '>
            
                         <Link href={'/signup'}>
-                            <li className='cursor-pointer hover:text-green-400 hover:font-bold hover:text-xl' >Sign up</li> 
+                            <li className='cursor-pointer hover:text-green-400 hover:font-bold ' >Sign up</li> 
                         </Link>
 
+                        <li className="text-xl font-bold"><RxDividerVertical /></li>
 
-                        <li className='cursor-pointer hover:text-green-400 hover:font-bold hover:text-xl'>Login here</li>
+
+                        <Link href={'/login'}>
+                            <li className='cursor-pointer hover:text-green-400 hover:font-bold '>Login</li>
+                        </Link>
                     </ul>)}  
                 </ul>
 
