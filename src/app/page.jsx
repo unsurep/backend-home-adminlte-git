@@ -1,13 +1,13 @@
 'use client'
 
-import HomeSectionFour from "@/Components/HomeSection.jsx/HomeSectionFour";
-import HomeSectionOne from "@/Components/HomeSection.jsx/HomeSectionOne";
-import HomeSectionThree from "@/Components/HomeSection.jsx/HomeSectionThree";
-import HomeSectionTwo from "@/Components/HomeSection.jsx/HomeSectionTwo";
+import HomeSectionFour from "@/components/HomeSection.jsx/HomeSectionFour";
+import HomeSectionOne from "@/components/HomeSection.jsx/HomeSectionOne";
+import HomeSectionThree from "@/components/HomeSection.jsx/HomeSectionThree";
+import HomeSectionTwo from "@/components/HomeSection.jsx/HomeSectionTwo";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from 'react'
-import Navbar from "@/Components/Navbar";
+import Navbar from "@/components/Navbar";
 
 
 
@@ -50,7 +50,7 @@ const Home = () => {
     <div className="">
       <Navbar/>
       <HomeSectionOne/>
-      {/* <HomeSectionTwo/> */}
+      <HomeSectionTwo/>
       {/* <HomeSectionThree/> */}
       {/* <HomeSectionFour/> */}
       
