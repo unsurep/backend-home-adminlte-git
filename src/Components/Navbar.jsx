@@ -14,6 +14,8 @@ import { RxDividerVertical } from "react-icons/rx";
 
 
 
+
+
 const Navbar=()=>{
 
     const[showIcon, setShowIcon]=useState(false);
@@ -86,26 +88,31 @@ const Navbar=()=>{
                     <li className="text-zinc-300 hover:text-white cursor-pointer hover:font-bold">Blog</li>
 
                     <li onClick={toggleIcon} className='text-2xl cursor-pointer text-white'><FaUser /> </li>
+                </ul>
+
 
                     {showIcon===true && (<ul className='absolute bounce-in-top top-24 right-[23rem] bg-gradient-to-r from-sky-800 to-gray-900 text-white px-8 py-3  flex  gap-3 rounded-[12px] shadow-lg shadow-red-800 font-semibold  '>
            
-                        <Link href={'/signup'}>
-                            <li className='cursor-pointer hover:text-green-400 hover:font-bold ' >Sign up</li> 
-                        </Link>
+           <Link href={'/signup'}>
+               <li className='cursor-pointer hover:text-green-400 hover:font-bold ' >Sign up</li> 
+           </Link>
 
-                        <li className="text-xl font-bold"><RxDividerVertical /></li>
+           <li className="text-xl font-bold"><RxDividerVertical /></li>
 
 
-                        <Link href={'/login'}>
-                            <li className='cursor-pointer hover:text-green-400 hover:font-bold '>Login</li>
-                        </Link>
-                    </ul>)}  
-                </ul>
+           <Link href={'/login'}>
+               <li className='cursor-pointer hover:text-green-400 hover:font-bold '>Login</li>
+           </Link>
 
-                <div className="hidden md:hidden lg:block">
-                    <button className=" text-white  cursor-pointer border border-white rounded-full py-2 px-4 element hover:font-bold">Subscribe</button>
-                </div>
+    
+           </ul>  
+           
+                    )}
+                    <div className="hidden lg:block">
+          <button className="text-white cursor-pointer border border-white rounded-full py-2 px-4 element hover:font-bold">Subscribe</button>
+        </div>
             </nav>
+                    
         </div>
     )
 
