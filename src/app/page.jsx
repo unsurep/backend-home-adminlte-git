@@ -3,14 +3,15 @@
 
 
 
+import Footer from "@/components/Footer";
+import HomeSectionFour from "@/components/HomeSection/HomeSectionFour";
+import HomeSectionOne from "@/components/HomeSection/HomeSectionOne";
+import HomeSectionThree from "@/components/HomeSection/HomeSectionThree";
+import HomeSectionTwo from "@/components/HomeSection/HomeSectionTwo";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from 'react'
-import Footer from "@/components/Footer";
-import HomeSectionOne from "@/components/HomeSection/HomeSectionOne";
-import HomeSectionTwo from "@/components/HomeSection/HomeSectionTwo";
-import HomeSectionThree from "@/components/HomeSection/HomeSectionThree";
-import HomeSectionFour from "@/components/HomeSection/HomeSectionFour";
 
 
 
@@ -53,7 +54,7 @@ const Home = () => {
 
   return (
     <div className="">
-      
+      <Navbar/>
       <HomeSectionOne/>
       <HomeSectionTwo/>
       <HomeSectionThree/>
