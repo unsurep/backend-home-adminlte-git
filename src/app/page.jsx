@@ -6,12 +6,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from 'react'
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import HomeSectionOne from "@/components/HomeSection.jsx/HomeSectionOne";
-import HomeSectionTwo from "@/components/HomeSection.jsx/HomeSectionTwo";
-import HomeSectionThree from "@/components/HomeSection.jsx/HomeSectionThree";
-import HomeSectionFour from "@/components/HomeSection.jsx/HomeSectionFour";
+import HomeSectionOne from "@/components/HomeSection/HomeSectionOne";
+import HomeSectionTwo from "@/components/HomeSection/HomeSectionTwo";
+import HomeSectionThree from "@/components/HomeSection/HomeSectionThree";
+import HomeSectionFour from "@/components/HomeSection/HomeSectionFour";
 
 
 
@@ -54,7 +53,7 @@ const Home = () => {
 
   return (
     <div className="">
-      <Navbar/>
+      
       <HomeSectionOne/>
       <HomeSectionTwo/>
       <HomeSectionThree/>
