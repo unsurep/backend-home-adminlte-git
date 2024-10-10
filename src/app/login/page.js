@@ -4,7 +4,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState, useEffect } from "react"
-import Login from "@/components/Login/login";
+import Login from "@/Components/Login/login";
 
 
 

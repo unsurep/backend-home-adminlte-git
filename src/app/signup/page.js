@@ -6,7 +6,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
-import SignUpPage from "@/components/Signup/SignUpPage";
+import SignUpPage from "@/Components/Signup/SignUpPage";
 
 const Page =()=>{
 

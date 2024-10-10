@@ -37,7 +37,7 @@ const Login=()=>{
     
     return(
         <>                  
-            <section className="md:py-8 md:px-8 loginBg  h-screen">
+            <section className=" md:py-8 md:px-8 loginBg  h-screen">
                 
                 <div className="flex items-center justify-center md:gap-28 h-[90vh] bg-white  bg-opacity-70 relative ">
                     <Link href={'/'}>
@@ -45,7 +45,7 @@ const Login=()=>{
                     </Link>
                     
                     {/* form div */}
-                    <div className="bg-slate-50 opacity-85 md:p-10 rounded-lg ring ring-purple-500 ">
+                    <div className="bg-slate-50 opacity-85 px-[2rem] md:p-10 rounded-lg ring ring-purple-500 ">
                         <form onSubmit={submitHandler} className="" action="">
                             <h1 className="text-black text-2xl font-bold">Login</h1>
                             <p className="text-sm text-neutral-500">Do not have an account yet? <u className="text-sm text-purple-500 cursor-pointer font-semibold">Sign Up</u></p>

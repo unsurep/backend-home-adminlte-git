@@ -3,12 +3,12 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import logo from '../components/Image/logo.webp'
+
+import logo from '../Components/Image/logo.webp'
 import { IoMenu } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { RxDividerVertical } from "react-icons/rx";
-
 
 
 
@@ -32,7 +32,7 @@ const Navbar=()=>{
 
     return(
         <div className="">
-            <nav className="flex lg:px-[5rem] px-4 py-6  items-center justify-between relative  bg-red-400    md:bg-yellow-600 lg:bg-green-600 ">
+            <nav className="flex lg:px-[5rem] px-4 py-6  items-center justify-between relative  bg-gradient-to-r from-sky-950 to-gray-900 ">
                 {/* left div */}
 
 
@@ -88,31 +88,28 @@ const Navbar=()=>{
                     <li className="text-zinc-300 hover:text-white cursor-pointer hover:font-bold">Blog</li>
 
                     <li onClick={toggleIcon} className='text-2xl cursor-pointer text-white'><FaUser /> </li>
-                </ul>
 
 
                     {showIcon===true && (<ul className='absolute bounce-in-top top-24 right-[23rem] bg-gradient-to-r from-sky-800 to-gray-900 text-white px-8 py-3  flex  gap-3 rounded-[12px] shadow-lg shadow-red-800 font-semibold  '>
            
-           <Link href={'/signup'}>
-               <li className='cursor-pointer hover:text-green-400 hover:font-bold ' >Sign up</li> 
-           </Link>
+                        <Link href={'/signup'}>
+                            <li className='cursor-pointer hover:text-green-400 hover:font-bold ' >Sign up</li> 
+                        </Link>
 
-           <li className="text-xl font-bold"><RxDividerVertical /></li>
+                        <li className="text-xl font-bold"><RxDividerVertical /></li>
 
 
-           <Link href={'/login'}>
-               <li className='cursor-pointer hover:text-green-400 hover:font-bold '>Login</li>
-           </Link>
+                        <Link href={'/login'}>
+                            <li className='cursor-pointer hover:text-green-400 hover:font-bold '>Login</li>
+                        </Link>
 
-    
-           </ul>  
-           
-                    )}
-                    <div className="hidden lg:block">
-          <button className="text-white cursor-pointer border border-white rounded-full py-2 px-4 element hover:font-bold">Subscribe</button>
-        </div>
+                    </ul>)}  
+                </ul>
+
+                <div className="hidden md:hidden lg:block">
+                    <button className=" text-white  cursor-pointer border border-white rounded-full py-2 px-4 element hover:font-bold">Subscribe</button>
+                </div>
             </nav>
-                    
         </div>
     )
 
