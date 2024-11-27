@@ -45,8 +45,10 @@ const Navbar=()=>{
 
                     {/* toggle drop down for smaller screen 320 - tablet */}
                     <div  onClick={toggleMenu} className=" lg:hidden     ">
-                        {showMenu===true ? <div  className="text-4xl"><IoMdClose />
-                        <div className="absolute  top-[6rem] right-[1rem] p-8 bg-white h-[80vh] w-[100vw]" >
+                        {showMenu===true ? 
+                        
+                    <div  className="text-4xl"><IoMdClose />
+                        <div className="absolute  top-[7rem] right-[1rem] p-8 bg-white h-[80vh] w-[100vw]" >
                             <ul className="text-lg flex flex-col gap-5">
 
                                <Link href={'/'}>
@@ -70,7 +72,7 @@ const Navbar=()=>{
                                 <button className="mt-8 text-xl border border-black px-6 py-3 rounded-full" >Subscribe</button>
                             </Link>
                         </div>
-                        </div>:<div className="text-4xl"><IoMenu /></div> }
+                        </div>:<div ><IoMenu /></div> }
                     </div>
 
                 
