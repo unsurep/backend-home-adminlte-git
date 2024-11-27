@@ -4,7 +4,7 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import logo from '../Components/Image/logo.webp'
+import logo from '../components/Image/logo.webp'
 
 
 
